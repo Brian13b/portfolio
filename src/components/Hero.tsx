@@ -7,14 +7,14 @@ export const Hero = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center px-4 py-20 lg:pr-96">
+    <section id="home" className="min-h-screen flex items-center justify-center px-4 py-20">
       <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in-up">
         <div className="space-y-4">
           <h1 className="text-5xl md:text-7xl font-bold bg-gradient-primary bg-clip-text text-transparent">
             Hola, Soy Brian Battauz
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground">
-            Desarrollador Backend & Frontend
+            Desarrollador Backend | Java, C# & Python
           </p>
         </div>
         

@@ -1,9 +1,9 @@
+import { useEffect, useRef, useState } from "react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { Mail, Github, Linkedin, Twitter } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
-import { useInView } from "react-intersection-observer";
 
 const socialLinks = [
   { icon: Github, href: "https://github.com/brian13b", label: "GitHub" },
@@ -13,11 +13,26 @@ const socialLinks = [
 ];
 
 export const Contact = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
   const { toast } = useToast();
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
-  });
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -28,9 +43,9 @@ export const Contact = () => {
   };
 
   return (
-    <section id="contact" ref={ref} className="min-h-screen py-20 px-4 lg:pr-96">
+    <section id="contact" ref={ref} className="min-h-screen py-20 px-4">
       <div className="max-w-4xl mx-auto">
-        <div className={`text-center mb-16 transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
+        <div className={`text-center mb-16 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Contacto</h2>
           <p className="text-xl text-muted-foreground">
             ¿Tienes un proyecto en mente? ¡Hablemos!
@@ -38,7 +53,7 @@ export const Contact = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
-          <div className={`space-y-6 transition-all duration-700 delay-150 ${inView ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}>
+          <div className={`space-y-6 transition-all duration-700 delay-150 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}>
             <div>
               <h3 className="text-2xl font-semibold mb-4">Conectemos</h3>
               <p className="text-muted-foreground mb-6">
@@ -62,7 +77,7 @@ export const Contact = () => {
             </div>
           </div>
 
-          <form onSubmit={handleSubmit} className={`space-y-4 transition-all duration-700 delay-300 ${inView ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"}`}>
+          <form onSubmit={handleSubmit} className={`space-y-4 transition-all duration-700 delay-300 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"}`}>
             <div>
               <Input placeholder="Tu nombre" required />
             </div>
