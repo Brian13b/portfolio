@@ -6,10 +6,10 @@ import { Mail, Github, Linkedin, Twitter } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const socialLinks = [
-  { icon: Github, href: "#", label: "GitHub" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
+  { icon: Github, href: "https://github.com/brian13b", label: "GitHub" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/brian-battauz-75691a217", label: "LinkedIn" },
   { icon: Twitter, href: "#", label: "Twitter" },
-  { icon: Mail, href: "mailto:tu@email.com", label: "Email" },
+  { icon: Mail, href: "mailto:brian.nbattauz@gmail.com", label: "Email" },
 ];
 
 export const Contact = () => {

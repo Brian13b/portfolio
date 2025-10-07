@@ -11,16 +11,16 @@ export const Hero = () => {
       <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in-up">
         <div className="space-y-4">
           <h1 className="text-5xl md:text-7xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-            Hola, Soy Developer
+            Hola, Soy Brian Battauz
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground">
-            Desarrollador Full Stack & Diseñador UI/UX
+            Desarrollador Backend | Java, C# & Python
           </p>
         </div>
         
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-          Creo experiencias digitales increíbles que combinan diseño elegante con código limpio.
-          Especializado en React, TypeScript y desarrollo web moderno.
+          Backend Developer apasionado con foco en Python, Java y C#, actualmente expandiendo mis horizontes hacia el mundo Full Stack.
+          Me motiva crear soluciones escalables, limpias y con impacto real.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
