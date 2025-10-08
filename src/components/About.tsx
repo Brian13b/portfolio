@@ -54,9 +54,9 @@ export const About = () => {
   return (
     <section id="about" ref={ref} className="min-h-screen py-20 px-4">
       <div className="max-w-6xl mx-auto">
-        <div className={`text-center mb-16 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Sobre Mí</h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+        <div className={`mb-16 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 after:block after:w-20 after:h-1 after:bg-primary after:rounded-full after:mt-5">Sobre Mí</h2>
+          <p className="text-xl text-muted-foreground">
             Estudiante avanzado de la Tecnicatura Universitaria en Programación en la UTN, con una sólida formación en desarrollo de software.
             Me considero una persona proactiva y adaptable, con capacidad para resolver problemas y aprender nuevas tecnologías de manera autónoma.
           </p>

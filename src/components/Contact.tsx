@@ -2,13 +2,12 @@ import { useEffect, useRef, useState } from "react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
-import { Mail, Github, Linkedin, Twitter } from "lucide-react";
+import { Mail, Github, Linkedin } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const socialLinks = [
   { icon: Github, href: "https://github.com/brian13b", label: "GitHub" },
   { icon: Linkedin, href: "https://www.linkedin.com/in/brian-battauz-75691a217", label: "LinkedIn" },
-  { icon: Twitter, href: "#", label: "Twitter" },
   { icon: Mail, href: "mailto:brian.nbattauz@gmail.com", label: "Email" },
 ];
 
@@ -44,23 +43,20 @@ export const Contact = () => {
 
   return (
     <section id="contact" ref={ref} className="min-h-screen py-20 px-4">
-      <div className="max-w-4xl mx-auto">
-        <div className={`text-center mb-16 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Contacto</h2>
-          <p className="text-xl text-muted-foreground">
-            ¿Tienes un proyecto en mente? ¡Hablemos!
-          </p>
+      <div className="max-w-6xl mx-auto">
+        <div className={`mb-16 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 after:block after:w-20 after:h-1 after:bg-primary after:rounded-full after:mt-5">Contacto</h2>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-16">
           <div className={`space-y-6 transition-all duration-700 delay-150 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}>
             <div>
-              <h3 className="text-2xl font-semibold mb-4">Conectemos</h3>
-              <p className="text-muted-foreground mb-6">
+              <h3 className="text-2xl text-muted-foreground font-semibold mb-4">¿Tienes un proyecto en mente? ¡Hablemos!</h3>
+              <p className="text-xl text-muted-foreground mb-6">
                 Estoy siempre abierto a nuevas oportunidades y colaboraciones.
                 No dudes en contactarme a través de cualquiera de estos medios.
               </p>
-              <div className="flex gap-4">
+              <div className="flex gap-6">
                 {socialLinks.map((social) => (
                   <a
                     key={social.label}
