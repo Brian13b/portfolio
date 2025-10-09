@@ -21,19 +21,19 @@ interface ProjectModalProps {
 export const ProjectModal = ({ project, open, onOpenChange }: ProjectModalProps) => {
     return (
         <Dialog open={open} onOpenChange={onOpenChange}>
-            <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
+            <DialogContent className="max-w-4xl overflow-hidden">
                 <DialogHeader>
                     <DialogTitle className="text-3xl">{project.title}</DialogTitle>
                     <DialogDescription className="text-base">{project.shortDesc}</DialogDescription>
                 </DialogHeader>
                 
-                <div className="space-y-6 mt-4">
+                    <div className="space-y-6 mt-4 max-h-[80vh] overflow-auto no-scrollbar p-2">
                     {/* Image Carousel */}
                     <Carousel className="w-full">
                         <CarouselContent>
                             {project.images.map((image, index) => (
                                 <CarouselItem key={index}>
-                                    <div className="aspect-video overflow-hidden rounded-1g">
+                                        <div className="aspect-video overflow-hidden rounded-lg">
                                         <img
                                             src={image}
                                             alt={`${project.title} Imagen ${index + 1}`}

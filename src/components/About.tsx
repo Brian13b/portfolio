@@ -26,7 +26,8 @@ const techStack = {
     { name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
     { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
     { name: "VS Code", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
-    { name: "IntelliJ", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" },
+    { name: "Postman", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" },
+    { name: "Swagger", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swagger/swagger-original.svg" },
   ],
 };
 
@@ -68,7 +69,7 @@ export const About = () => {
             <h3 className="text-2xl font-semibold mb-6 flex items-center gap-2">
               <span className="text-primary">🔧</span> Backend
             </h3>
-            <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
               {techStack.backend.map((tech, index) => (
                 <div
                   key={index}
@@ -86,7 +87,7 @@ export const About = () => {
             <h3 className="text-2xl font-semibold mb-6 flex items-center gap-2">
               <span className="text-primary">🎨</span> Frontend
             </h3>
-            <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
               {techStack.frontend.map((tech, index) => (
                 <div
                   key={index}
@@ -104,7 +105,7 @@ export const About = () => {
             <h3 className="text-2xl font-semibold mb-6 flex items-center gap-2">
               <span className="text-primary">🗃️</span> Bases de Datos
             </h3>
-            <div className="grid grid-cols-3 sm:grid-cols-4 gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
               {techStack.databases.map((tech, index) => (
                 <div
                   key={index}
@@ -122,7 +123,7 @@ export const About = () => {
             <h3 className="text-2xl font-semibold mb-6 flex items-center gap-2">
               <span className="text-primary">⚙️</span> Herramientas
             </h3>
-            <div className="grid grid-cols-3 sm:grid-cols-4 gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
               {techStack.tools.map((tech, index) => (
                 <div
                   key={index}
