@@ -4,7 +4,8 @@ import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { Mail, Github, Linkedin, Phone } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
+
 
 const socialLinks = [
   { icon: Github, href: "https://github.com/brian13b", label: "GitHub" },
