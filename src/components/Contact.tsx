@@ -39,6 +39,8 @@ export const Contact = () => {
     e.preventDefault();
     setIsLoading(true);
 
+    const form = e.currentTarget;
+    
     const formData = new FormData(e.currentTarget);
     const templateParams = {
       from_name: formData.get("name"),
