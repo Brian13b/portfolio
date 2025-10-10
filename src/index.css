@@ -8,71 +8,71 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
+    --background: 39 46% 89%;          
+    --foreground: 240 10% 3.9%;        
 
-    --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
+  --card: 39 40% 82%;                
+  --card-foreground: 240 10% 3.9%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
+  --popover: 39 40% 82%;
+  --popover-foreground: 240 10% 3.9%;
 
-    --primary: 262 83% 58%;
-    --primary-foreground: 0 0% 100%;
+  --primary: 12 100% 46%;
+  --primary-foreground: 0 0% 100%;
 
-    --secondary: 220 14% 96%;
-    --secondary-foreground: 240 10% 3.9%;
+  --secondary: 39 22% 92%;
+  --secondary-foreground: 240 10% 3.9%;
 
-    --muted: 220 14% 96%;
-    --muted-foreground: 240 3.8% 46.1%;
+  --muted: 39 22% 86%;
+  --muted-foreground: 39 10% 46%;
 
-    --accent: 220 14% 96%;
-    --accent-foreground: 240 10% 3.9%;
+  --accent: 12 90% 45%;
+  --accent-foreground: 0 0% 98%;
 
-    --destructive: 0 84.2% 60.2%;
+  --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
-    --ring: 262 83% 58%;
+  --border: 39 18% 84%;
+  --input: 39 18% 84%;
+  --ring: 12 100% 46%;
 
     --radius: 0.75rem;
 
-    --gradient-primary: linear-gradient(135deg, hsl(262 83% 58%), hsl(220 100% 66%));
-    --gradient-accent: linear-gradient(135deg, hsl(220 100% 66%), hsl(262 83% 58%));
+  --gradient-primary: linear-gradient(135deg, hsl(12 100% 46%), hsl(28 90% 65%));
+  --gradient-accent: linear-gradient(135deg, hsl(28 90% 65%), hsl(12 100% 46%));
   }
 
   .dark {
-    --background: 240 10% 3.9%;
+    --background: 20 12% 6%;         
     --foreground: 0 0% 98%;
 
-    --card: 240 10% 7%;
+    --card: 20 12% 10%;
     --card-foreground: 0 0% 98%;
 
-    --popover: 240 10% 7%;
+    --popover: 20 12% 10%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 262 83% 58%;
+    --primary: 12 100% 46%;          
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 240 3.7% 15.9%;
+    --secondary: 39 30% 14%;
     --secondary-foreground: 0 0% 98%;
 
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
+    --muted: 39 30% 14%;
+    --muted-foreground: 39 20% 60%;
 
-    --accent: 240 3.7% 15.9%;
+    --accent: 12 90% 40%;
     --accent-foreground: 0 0% 98%;
 
-    --destructive: 0 62.8% 30.6%;
+    --destructive: 12 85% 30%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 262 83% 58%;
+    --border: 20 10% 12%;
+    --input: 20 10% 12%;
+    --ring: 12 100% 46%;
 
-    --gradient-primary: linear-gradient(135deg, hsl(262 83% 58%), hsl(220 100% 66%));
-    --gradient-accent: linear-gradient(135deg, hsl(220 100% 66%), hsl(262 83% 58%));
+    --gradient-primary: linear-gradient(135deg, hsl(12 100% 46%), hsl(12 90% 60%));
+    --gradient-accent: linear-gradient(135deg, hsl(12 90% 60%), hsl(12 100% 46%));
   }
 }
 
@@ -86,11 +86,10 @@ All colors MUST be HSL.
   }
 }
 
-/* Utility to hide native scrollbars but keep scrolling functional */
 .no-scrollbar {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 .no-scrollbar::-webkit-scrollbar {
-  display: none; /* Chrome, Safari and Opera */
+  display: none;
 }

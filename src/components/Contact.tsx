@@ -40,7 +40,7 @@ export const Contact = () => {
     setIsLoading(true);
 
     const form = e.currentTarget;
-    
+
     const formData = new FormData(e.currentTarget);
     const templateParams = {
       from_name: formData.get("name"),
@@ -69,7 +69,7 @@ export const Contact = () => {
         title: "¡Mensaje enviado!",
         description: "Te contactaré pronto. Gracias por tu mensaje.",
       });
-      e.currentTarget.reset();
+      form.reset();
     } catch (error) {
       console.error("Error enviando email:", error);
       toast({

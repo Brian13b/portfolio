@@ -51,7 +51,16 @@ export const ProjectModal = ({ project, open, onOpenChange }: ProjectModalProps)
                     {project.longDesc && (
                         <div>
                             <h3 className="text-xl font-semibold mb-2">Descripción Detallada</h3>
-                            <p className="text-muted-foreground">{project.longDesc}</p>
+                            <div className="text-muted-foreground space-y-2">
+                                {project.longDesc
+                                    .replace(/\\n/g, "\n")
+                                    .split(/\n{2,}/)
+                                    .map((para) => para.trim())
+                                    .filter(Boolean)
+                                    .map((para, idx) => (
+                                        <p key={idx}>{para}</p>
+                                    ))}
+                            </div>
                         </div>
                     )}
 
