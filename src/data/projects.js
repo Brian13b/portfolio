@@ -86,7 +86,7 @@ Sistema integral de visualización y gestión inmobiliaria con arquitectura mode
       "/images/proyecto3.png",
       "/images/proyecto3/propiedadesdestacadas.png",
       "/images/proyecto3/alquileres.jpg",
-      "/images/proyecto3/propiedadetalle.jpg",
+      "/images/proyecto3/propiedadetalle.png",
       "/images/proyecto3/contacto.jpg",
       "/images/proyecto3/accesoadministrador.jpg",
       "/images/proyecto3/paneldecontroladmin.jpg",
