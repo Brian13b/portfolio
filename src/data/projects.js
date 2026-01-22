@@ -62,32 +62,40 @@ Está diseñado bajo una arquitectura de microservicios, integrados a través de
   },
   {
     id: 3,
-    title: "Task API",
-    tags: ["Java", "Spring Boot", "PostgreSQL", "JWT", "DTO Pattern"],
-    cover: "/images/proyecto3.jpg",
-    shortDesc: "API Rest de lista de tareas con autenticación.",
+    title: "Plataforma Inmobiliaria Full Stack",
+    tags: [".NET 9", "React", "PostgreSQL", "Docker", "Tailwind"],
+    cover: "/images/proyecto3.png",
+    shortDesc: "Plataforma de gestión de propiedades con .NET 9, React y PostgreSQL.",
     longDesc: `
-Backend de una aplicación ToDo diseñada para organizar tareas y gestionar usuarios con seguridad y eficiencia.\n
+Sistema integral de visualización y gestión inmobiliaria con arquitectura moderna y alto rendimiento (Lighthouse 95+).\n
 \n
 📋 Funcionalidades principales\n
- 🔹 Crear, editar, eliminar y marcar tareas como completadas\n
- 🔹 Registro y autenticación de usuarios con JWT\n
- 🔹 Rutas protegidas para manejo personalizado de tareas\n
- 🔹 Validación de datos mediante DTOs\n
- 🔹 Base de datos relacional con persistencia robusta\n
+ 🔹 Exploración de propiedades con filtros avanzados (ubicación, precio, tipo)\n
+ 🔹 Carruseles de imágenes dinámicos y optimizados\n
+ 🔹 Arquitectura Clean Architecture en Backend\n
+ 🔹 Base de datos relacional en la nube (Supabase)\n
+ 🔹 Despliegue CI/CD automatizado\n
 \n
 🛠️ Tecnologías utilizadas\n
- 🔹 Lenguaje → Java\n
- 🔹 Framework → Spring Boot\n
- 🔹 Seguridad → Spring Security + JWT\n
- 🔹 Base de datos → PostgreSQL\n
- 🔹 Arquitectura → Patrón DTO para separación de lógica\n
+ 🔹 Frontend → React 19 + TypeScript + Tailwind CSS\n
+ 🔹 Backend → .NET 9 Web API + Entity Framework\n
+ 🔹 Base de datos → PostgreSQL (Supabase)\n
+ 🔹 Infraestructura → Docker + Koyeb + Netlify\n
     `,
     images: [
-      "/images/proyecto3.jpg"
+      "/images/proyecto3.png",
+      "/images/proyecto3/propiedadesdestacadas.png",
+      "/images/proyecto3/alquileres.jpg",
+      "/images/proyecto3/propiedadetalle.jpg",
+      "/images/proyecto3/contacto.jpg",
+      "/images/proyecto3/accesoadministrador.jpg",
+      "/images/proyecto3/paneldecontroladmin.jpg",
+      "/images/proyecto3/mispropiedades.png",
+      "/images/proyecto3/editarpropiedad.jpg",
+      "/images/proyecto3/editarpropiedad2.jpg",
     ],
-    demo: "https://github.com/Brian13b/tasks-api",
-    github: "https://github.com/Brian13b/tasks-api"
+    demo: "https://inmobiliariabattauz.netlify.app",
+    github: "https://github.com/Brian13b/inmobiliaria_frontend" 
   },
   {
     id: 4,

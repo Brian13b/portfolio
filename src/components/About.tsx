@@ -58,7 +58,7 @@ export const About = () => {
         <div className={`mb-16 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
           <h2 className="text-4xl md:text-5xl font-bold mb-4 after:block after:w-20 after:h-1 after:bg-primary after:rounded-full after:mt-5">Sobre Mí</h2>
           <p className="text-xl text-muted-foreground">
-            Estudiante avanzado de la Tecnicatura Universitaria en Programación en la UTN, con una sólida formación en desarrollo de software.
+            Tecnico Universitario en Programación, graduado en la UTN, con una sólida formación en desarrollo de software.
             Me considero una persona proactiva y adaptable, con capacidad para resolver problemas y aprender nuevas tecnologías de manera autónoma.
           </p>
         </div>
