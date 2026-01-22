@@ -56,25 +56,31 @@ export const About = () => {
     <section id="about" ref={ref} className="min-h-screen py-20 px-4">
       <div className="max-w-6xl mx-auto">
         <div className={`mb-16 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 after:block after:w-20 after:h-1 after:bg-primary after:rounded-full after:mt-5">Sobre Mí</h2>
-          <p className="text-xl text-muted-foreground">
-            Tecnico Universitario en Programación, graduado en la UTN, con una sólida formación en desarrollo de software.
-            Me considero una persona proactiva y adaptable, con capacidad para resolver problemas y aprender nuevas tecnologías de manera autónoma.
-          </p>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 after:block after:w-20 after:h-1 after:bg-primary after:rounded-full after:mt-5">
+            Sobre Mí
+          </h2>
+          <div className="space-y-4 text-xl text-muted-foreground">
+            <p>
+              ¡Hola! Soy <strong className="text-foreground">Brian Battauz</strong>, Técnico Universitario en Programación graduado en la UTN.
+            </p>
+            <p>
+              Me especializo como <strong className="text-foreground">Backend & Frontend Developer</strong>. No me encasillo solo en un rol, sino que disfruto tener la capacidad de construir soluciones tecnológicas completas y complejas, desde la base de datos hasta la interfaz de usuario.
+            </p>
+            <p>
+              Apasionado por la arquitectura de software limpia y el aprendizaje continuo. Siempre busco optimizar cada línea de código para crear sistemas eficientes y escalables.
+            </p>
+          </div>
         </div>
 
         <div className="space-y-12">
-          {/* Backend */}
+           {/* Backend */}
           <div className={`transition-all duration-700 delay-100 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
             <h3 className="text-2xl font-semibold mb-6 flex items-center gap-2">
               <span className="text-primary">🔧</span> Backend
             </h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
               {techStack.backend.map((tech, index) => (
-                <div
-                  key={index}
-                  className="flex flex-col items-center gap-2 p-4 rounded-lg bg-card border border-border hover:border-primary hover:scale-110 transition-all duration-300"
-                >
+                <div key={index} className="flex flex-col items-center gap-2 p-4 rounded-lg bg-card border border-border hover:border-primary hover:scale-110 transition-all duration-300">
                   <img src={tech.icon} alt={tech.name} className="h-12 w-12" />
                   <span className="text-xs text-center text-muted-foreground">{tech.name}</span>
                 </div>
@@ -89,10 +95,7 @@ export const About = () => {
             </h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
               {techStack.frontend.map((tech, index) => (
-                <div
-                  key={index}
-                  className="flex flex-col items-center gap-2 p-4 rounded-lg bg-card border border-border hover:border-primary hover:scale-110 transition-all duration-300"
-                >
+                <div key={index} className="flex flex-col items-center gap-2 p-4 rounded-lg bg-card border border-border hover:border-primary hover:scale-110 transition-all duration-300">
                   <img src={tech.icon} alt={tech.name} className="h-12 w-12" />
                   <span className="text-xs text-center text-muted-foreground">{tech.name}</span>
                 </div>
@@ -107,10 +110,7 @@ export const About = () => {
             </h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
               {techStack.databases.map((tech, index) => (
-                <div
-                  key={index}
-                  className="flex flex-col items-center gap-2 p-4 rounded-lg bg-card border border-border hover:border-primary hover:scale-110 transition-all duration-300"
-                >
+                <div key={index} className="flex flex-col items-center gap-2 p-4 rounded-lg bg-card border border-border hover:border-primary hover:scale-110 transition-all duration-300">
                   <img src={tech.icon} alt={tech.name} className="h-12 w-12" />
                   <span className="text-xs text-center text-muted-foreground">{tech.name}</span>
                 </div>
@@ -125,10 +125,7 @@ export const About = () => {
             </h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
               {techStack.tools.map((tech, index) => (
-                <div
-                  key={index}
-                  className="flex flex-col items-center gap-2 p-4 rounded-lg bg-card border border-border hover:border-primary hover:scale-110 transition-all duration-300"
-                >
+                <div key={index} className="flex flex-col items-center gap-2 p-4 rounded-lg bg-card border border-border hover:border-primary hover:scale-110 transition-all duration-300">
                   <img src={tech.icon} alt={tech.name} className="h-12 w-12" />
                   <span className="text-xs text-center text-muted-foreground">{tech.name}</span>
                 </div>
