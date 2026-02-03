@@ -94,7 +94,7 @@ Sistema integral de visualización y gestión inmobiliaria con arquitectura mode
       "/images/proyecto3/editarpropiedad.jpg",
       "/images/proyecto3/editarpropiedad2.jpg",
     ],
-    demo: "https://inmobiliariabattauz.netlify.app",
+    demo: "https://inmobiliaria-frontend-ten.vercel.app/",
     github: "https://github.com/Brian13b/inmobiliaria_frontend" 
   },
   {
