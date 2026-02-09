@@ -107,22 +107,32 @@ const projects = [
   },
   {
     id: 4,
-    tags: ["React", "Context API", "TailwindCSS", "UX/UI"],
-    title: "E-commerce de Indumentaria Moderna",
+    tags: ["React", "Java Spring Boot", "PostgreSQL", "Cloudinary", "JWT", "TailwindCSS"],
+    title: "Camel Shop | E-commerce Full Stack",
     cover: "/images/proyecto_ecommerce.jpeg", 
-    shortDesc: "Tienda online completa con carrito de compras y gestión de catálogo.",
+    shortDesc: "Plataforma de comercio electrónico con gestión de stock matricial (Color/Talle) y panel administrativo.",
     longDesc: `
-      Desarrollo de una experiencia de compra fluida para una marca de indumentaria. El proyecto se centra en la optimización del User Journey, desde el descubrimiento del producto hasta el checkout.\n
+      Desarrollo integral de una plataforma E-commerce para una marca de indumentaria ("Camel Shop"). El sistema conecta una experiencia de compra moderna con un potente panel de gestión de inventario.\n
       \n
-      ✨ Experiencia de Usuario:\n
-      🔹 Catálogo dinámico con filtrado por categorías, talles y colores.\n
-      🔹 Carrito de compras persistente (State Management optimizado).\n
-      🔹 Diseño UI/UX minimalista y totalmente responsive (Mobile First).\n
-      🔹 Pasarela de pago simulada y validación de formularios.\n
+      🚀 **Características Principales:**\n
       \n
-      🛠️ Stack Tecnológico:\n
-      🔹 Frontend: React, TailwindCSS.\n
-      🔹 Lógica: Context API / Redux (según corresponda), Custom Hooks.\n
+      🛒 **Experiencia de Cliente (Frontend):**\n
+      🔹 Catálogo inteligente con filtrado por URL (SEO Friendly) y búsqueda en tiempo real.\n
+      🔹 Página de detalle inmersiva con selección dinámica de stock (bloqueo de talles sin stock).\n
+      🔹 Carrito de compras persistente con lógica de variantes (Color + Talle).\n
+      🔹 Checkout integrado con WhatsApp API para finalizar pedidos.\n
+      \n
+      ⚙️ **Panel de Administración (Back-office):**\n
+      🔹 Dashboard protegido con autenticación JWT (Spring Security).\n
+      🔹 **Gestión de Stock Matricial:** Carga de productos con múltiples variantes (Ej: Rojo/S, Rojo/M) y cálculo automático de totales.\n
+      🔹 Integración con **Cloudinary** para almacenamiento y optimización de imágenes en la nube.\n
+      🔹 Gestión de pedidos con estados (Pendiente, Enviado, Entregado) y carga de comprobantes.\n
+      \n
+      🛠️ **Arquitectura Técnica:**\n
+      🔹 **Backend:** Java 21, Spring Boot 3, Hibernate/JPA, Spring Security.\n
+      🔹 **Base de Datos:** PostgreSQL (alojada en Supabase).\n
+      🔹 **Frontend:** React.js, TailwindCSS, Context API, Axios.\n
+      🔹 **Infraestructura:** Despliegue en Railway (Backend) y Vercel (Frontend).\n
     `,
     images: [
       "/images/proyecto_ecommerce.jpeg", 
