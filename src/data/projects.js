@@ -1,23 +1,47 @@
 const projects = [
   {
     id: 1,
-    tags: ["Python", "FastAPI", "React", "PostgreSQL", "Docker", "Leaflet", "SOAP"],
-    title: "Logística Pro: Tracking GPS & Facturación",
+    tags: [
+      "Python", 
+      "FastAPI", 
+      "React", 
+      "PostgreSQL", 
+      "Docker",
+      "TCP/IP", 
+      "Microservicios",
+      "AFIP/ARCA"
+    ],
+    title: "Sistema Logístico Integral | Gestión, Tracking GPS & Facturación",
     cover: "/images/proyecto_logistico.jpg",
-    shortDesc: "Plataforma integral de logística con rastreo en tiempo real y facturación AFIP.",
+    shortDesc: "Solución End-to-End para logística: ERP administrativo, Facturación Electrónica y Tracking GPS con hardware propio.",
     longDesc: `
-      Solución Enterprise para empresas de transporte. Este sistema resuelve la problemática de unificar la gestión operativa con la administrativa en una sola plataforma.\n
-      \n
-      🔥 Puntos Fuertes (High-Level):\n
-      • Arquitectura de Microservicios desacoplada para máxima escalabilidad.\n
-      • Procesamiento de datos GPS en tiempo real mediante Sockets TCP asíncronos.\n
-      • Integración directa con ARCA (AFIP) para facturación electrónica legal.\n
-      \n
-      🛠️ Stack Tecnológico:\n
-      🔹 Backend: Python (FastAPI), AsyncIO, WebSockets.\n
-      🔹 Frontend: React, Redux, TailwindCSS, Leaflet (Mapas).\n
-      🔹 Infraestructura: Docker, Nginx, PostgreSQL + MongoDB.\n
-      🔹 Integraciones: SOAP/XML (Facturación), TCP (Hardware GPS).\n
+      Esta plataforma no es solo un dashboard; es un ecosistema operativo completo diseñado para empresas de transporte que necesitan unificar su gestión administrativa con la operativa en tiempo real.
+      
+      \n### 🚀 Visión General
+      El sistema resuelve la fragmentación de datos integrando el flujo de trabajo completo: desde que se da de alta un chofer y se asigna un viaje, hasta el seguimiento minuto a minuto de la carga y la facturación final validada por ARCA (ex AFIP).
+      
+      \n### 🔥 Desafíos Técnicos & Soluciones (High-Level)
+      
+      \n**1. Motor de Tracking:**
+      • Desarrollo de un **Servidor TCP asíncrono en Python** propio (sin depender de plataformas de terceros como Traccar).
+      • Decodificación binaria de tramas de hardware GPS (Protocolo GT06) a nivel de byte.
+      • Gestión de conexiones persistentes, heartbeats y reconexión automática ante pérdida de señal en ruta ("Zonas Muertas").
+      
+      \n**2. Arquitectura & Performance:**
+      • **Microservicios:** Separación de lógica crítica (Ingesta de datos GPS vs. Gestión Administrativa) desplegados independientemente en Render y Fly.io.
+      • **Optimización de Frontend:** Estrategias de renderizado eficiente en React para visualizar flotas en mapas sin congelar la UI, manejando cientos de actualizaciones de estado.
+      • **Base de Datos Eficiente:** Schemas optimizados ("Ligero" vs "Completo") para reducir tiempos de carga de 15s a <0.8s en consultas masivas.
+      
+      \n**3. Negocio & Compliance:**
+      • Integración SOAP/XML directa con los servidores de Facturación Electrónica de Argentina (Web Services de ARCA).
+      • Sistema de alertas automatizadas para vencimientos de documentación de vehículos y conductores.
+      
+      \n### 🛠️ Stack Tecnológico Detallado
+      • **Backend:** Python (FastAPI), AsyncIO (para concurrencia masiva), SQLAlchemy.
+      • **Frontend:** React.js, TailwindCSS, Context API, Axios (Interceptors), Leaflet (Mapas Interactivos).
+      • **Datos:** PostgreSQL (Relacional), Google Drive API (Almacenamiento de Docs).
+      • **Infraestructura:** Docker Containers, Nginx (Reverse Proxy), CI/CD básico.
+      • **Hardware:** Integración con trackers serie GT06 y compatibles.
     `,
     images: [
       "/images/proyecto_logistico.jpg",
@@ -40,24 +64,27 @@ const projects = [
   },
   {
     id: 2,
-    title: "Inmobiliaria Cloud: Gestión de Propiedades",
-    tags: [".NET 9", "C#", "React", "PostgreSQL", "Clean Architecture"],
+    title: "Bottazzi Inmobiliaria | Plataforma Digital End-to-End",
+    tags: [".NET 9", "React 19", "PostgreSQL", "Clean Architecture", "Cloudinary"],
     cover: "/images/proyecto_inmobiliaria.png",
-    shortDesc: "Sistema de gestión inmobiliaria de alto rendimiento con .NET 9 y React.",
+    shortDesc: "Ecosistema inmobiliario profesional: Gestión administrativa, catálogo dinámico y optimización SEO.",
     longDesc: `
-      Plataforma moderna diseñada bajo los principios de Clean Architecture, garantizando mantenibilidad y testabilidad. \n
-      El sistema permite la administración completa de un catálogo de propiedades con una experiencia de usuario fluida y tiempos de carga optimizados (Lighthouse 95+).\n
+      Plataforma integral diseñada para el sector inmobiliario bajo un enfoque de **Clean Architecture**, priorizando la escalabilidad y el desacoplamiento de la lógica de negocio. \n
+      
+      El proyecto resuelve problemáticas reales como la gestión eficiente de activos multimedia, la visibilidad en buscadores (SEO) y una experiencia de usuario (UX) premium de estilo 'Wealth'.\n
       \n
-      🚀 Características Clave:\n
-      🔹 Backend robusto en .NET 9 Web API con Entity Framework Core.\n
-      🔹 Filtrado avanzado y búsqueda dinámica de propiedades.\n
-      🔹 Panel de administración seguro con roles y permisos.\n
-      🔹 Despliegue automatizado (CI/CD) en contenedores.\n
+      🚀 **Características de Ingeniería:**\n
+      🔹 **Arquitectura Limpia:** Separación estricta de capas (Domain, Application, Infrastructure, API) para facilitar el mantenimiento y la evolución del sistema.\n
+      🔹 **Filtros de Alto Rendimiento:** Implementación de búsqueda dinámica por múltiples criterios (servicios, comodidades, rangos de precio y estado del inmueble).\n
+      🔹 **Gestión Multimedia Pro:** Integración con **Cloudinary** para el procesamiento, optimización y entrega de imágenes en la nube, garantizando tiempos de carga mínimos.\n
+      🔹 **SEO Dinámico:** Implementación de metatags y datos estructurados dinámicos por propiedad para maximizar el posicionamiento orgánico.\n
+      🔹 **Admin Panel 'Full Control':** Panel privado para la gestión de catálogo, configuración de portadas (Hero) y recepción de consultas vía API con integración a WhatsApp.\n
       \n
-      🛠️ Stack Tecnológico:\n
-      🔹 Core: C# .NET 9, React 19 + TypeScript.\n
-      🔹 Datos: PostgreSQL (Supabase), Entity Framework.\n
-      🔹 DevOps: Docker, Koyeb.\n
+      🛠️ **Stack Tecnológico y Herramientas:**\n
+      🔹 **Backend:** C# .NET 9 Web API, Entity Framework Core (Code First), JWT Auth.\n
+      🔹 **Frontend:** React 19, TypeScript, Tailwind CSS, Lucide Icons, Swiper.js.\n
+      🔹 **Base de Datos:** PostgreSQL administrado vía **Supabase**.\n
+      🔹 **Infraestructura:** CI/CD automatizado, Hosting en **Koyeb** (Backend) y **Vercel** (Frontend).\n
     `,
     images: [
       "/images/proyecto_inmobiliaria.png",
@@ -69,8 +96,7 @@ const projects = [
       "/images/proyecto_inmobiliaria/paneldecontroladmin.jpg",
       "/images/proyecto_inmobiliaria/mispropiedades.jpg",
       "/images/proyecto_inmobiliaria/editarpropiedad.jpg",
-      "/images/proyecto_inmobiliaria/editarpropiedad2.jpg",
-      "/images/proyecto_inmobiliaria/editarpropiedad.jpg"
+      "/images/proyecto_inmobiliaria/editarpropiedad2.jpg"
     ],
     demo: "https://inmobiliariabottazzi.vercel.app/",
     github: "https://github.com/Brian13b/inmobiliaria_frontend" 
@@ -78,7 +104,7 @@ const projects = [
   {
     id: 3,
     tags: ["FastAPI", "React", "Firebase", "PostgreSQL", "SaaS"],
-    title: "Quico Basquet: SaaS de Reservas",
+    title: "Quico Basquet | SaaS de Reservas",
     cover: "/images/proyecto_quicobasquet.jpg",
     shortDesc: "Software de gestión de clubes deportivos, reservas y membresías.",
     longDesc: `
@@ -110,7 +136,7 @@ const projects = [
     tags: ["React", "Java Spring Boot", "PostgreSQL", "Cloudinary", "JWT", "TailwindCSS"],
     title: "Camel Shop | E-commerce Full Stack",
     cover: "/images/proyecto_ecommerce.jpeg", 
-    shortDesc: "Plataforma de comercio electrónico con gestión de stock matricial (Color/Talle) y panel administrativo.",
+    shortDesc: "Plataforma de comercio electrónico con gestión de stock matricial y panel administrativo.",
     longDesc: `
       Desarrollo integral de una plataforma E-commerce para una marca de indumentaria ("Camel Shop"). El sistema conecta una experiencia de compra moderna con un potente panel de gestión de inventario.\n
       \n
