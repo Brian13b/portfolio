@@ -13,7 +13,7 @@ const Index = () => {
       <About />
       <Contact />
       <footer className="py-8 text-center text-muted-foreground border-t border-border">
-        <p>© 2025 Brian Battauz. Creado con ❤️</p>
+        <p>© 2025 Brian Battauz.</p>
       </footer>
     </div>
   );
