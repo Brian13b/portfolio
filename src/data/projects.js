@@ -110,9 +110,9 @@ const projects = [
     tags: ["FastAPI", "React", "Firebase", "PostgreSQL", "SaaS"],
     title: "Quico Basquet | SaaS de Reservas",
     cover: "/images/proyecto_quicobasquet.jpg",
-    shortDesc: "Software de gestión de clubes deportivos, reservas y membresías.",
+    shortDesc: "Software de gestión de cancha deportiva, reservas y suscripciones.",
     longDesc: `
-      Aplicación Full Stack tipo SaaS para la digitalización de clubes deportivos. Permite automatizar la gestión de turnos, reduciendo la carga administrativa y eliminando errores de solapamiento.\n
+      Aplicación Full Stack tipo SaaS para la digitalización de canchas deportivas. Permite automatizar la gestión de turnos, reduciendo la carga administrativa y eliminando errores de solapamiento.\n
       \n
       💼 Funcionalidades de Negocio:\n
       🔹 Motor de reservas en tiempo real para múltiples canchas (Básquet/Vóley).\n
@@ -140,7 +140,7 @@ const projects = [
     tags: ["React", "Java Spring Boot", "PostgreSQL", "Cloudinary", "JWT", "TailwindCSS"],
     title: "Camel Shop | E-commerce Full Stack",
     cover: "/images/proyecto_ecommerce.jpeg", 
-    shortDesc: "Plataforma de comercio electrónico con gestión de stock matricial y panel administrativo.",
+    shortDesc: "Plataforma de comercio electrónico con gestión de stock y panel administrativo.",
     longDesc: `
       Desarrollo integral de una plataforma E-commerce para una marca de indumentaria ("Camel Shop"). El sistema conecta una experiencia de compra moderna con un potente panel de gestión de inventario.\n
       \n
