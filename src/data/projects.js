@@ -64,7 +64,7 @@ const projects = [
   },
   {
     id: 2,
-    title: "Bottazzi Inmobiliaria | Plataforma Digital End-to-End",
+    title: "Bottazzi Inmobiliaria | Plataforma Digital",
     tags: [".NET 9", "React 19", "PostgreSQL", "Clean Architecture", "Cloudinary"],
     cover: "/images/proyecto_inmobiliaria.png",
     shortDesc: "Ecosistema inmobiliario profesional: Gestión administrativa, catálogo dinámico y optimización SEO.",
@@ -89,16 +89,20 @@ const projects = [
     images: [
       "/images/proyecto_inmobiliaria.png",
       "/images/proyecto_inmobiliaria/propiedadesdestacadas.png",
-      "/images/proyecto_inmobiliaria/alquileres.jpg",
-      "/images/proyecto_inmobiliaria/propiedadetalle.png",
-      "/images/proyecto_inmobiliaria/contacto.jpg",
-      "/images/proyecto_inmobiliaria/accesoadministrador.jpg",
-      "/images/proyecto_inmobiliaria/paneldecontroladmin.jpg",
-      "/images/proyecto_inmobiliaria/mispropiedades.jpg",
-      "/images/proyecto_inmobiliaria/editarpropiedad.jpg",
-      "/images/proyecto_inmobiliaria/editarpropiedad2.jpg"
+      "/images/proyecto_inmobiliaria/ventas.png",
+      "/images/proyecto_inmobiliaria/propiedadetalles.png",
+      "/images/proyecto_inmobiliaria/propiedadetalles2.png",
+      "/images/proyecto_inmobiliaria/tasaciones.png",
+      "/images/proyecto_inmobiliaria/contacto.png",
+      "/images/proyecto_inmobiliaria/contacto2.png",
+      "/images/proyecto_inmobiliaria/footer.png",
+      "/images/proyecto_inmobiliaria/accesoadministrador.png",
+      "/images/proyecto_inmobiliaria/paneldecontroladmin.png",
+      "/images/proyecto_inmobiliaria/mispropiedades.png",
+      "/images/proyecto_inmobiliaria/nuevapropiedad.png",
+      "/images/proyecto_inmobiliaria/nuevapropiedad2.png",
     ],
-    demo: "https://inmobiliariabottazzi.vercel.app/",
+    demo: "https://inmobiliariabottazzi.com.ar/",
     github: "https://github.com/Brian13b/inmobiliaria_frontend" 
   },
   {
