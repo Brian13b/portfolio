@@ -166,15 +166,15 @@ const projects = [
     `,
     images: [
       "/images/proyecto_ecommerce.jpeg", 
-      "/images/proyecto_ecommerce/ecommerce1.jpeg",
-      "/images/proyecto_ecommerce/ecommerce2.jpeg",
-      "/images/proyecto_ecommerce/ecommerce3.jpeg",
-      "/images/proyecto_ecommerce/ecommerce4.jpeg",
-      "/images/proyecto_ecommerce/ecommerce5.jpeg",
-      "/images/proyecto_ecommerce/ecommerce6.jpeg",
-      "/images/proyecto_ecommerce/ecommerce7.jpeg",
-      "/images/proyecto_ecommerce/ecommerce8.jpeg",
-      "/images/proyecto_ecommerce/ecommerce9.jpeg"
+      "/images/proyecto_ecommerce/ecommerce-inicio-2.jpeg",
+      "/images/proyecto_ecommerce/ecommerce-catalogo.jpeg",
+      "/images/proyecto_ecommerce/ecommerce-prenda-detalle.jpeg",
+      "/images/proyecto_ecommerce/ecommerce-carrito.jpeg",
+      "/images/proyecto_ecommerce/ecommerce-checkout.jpeg",
+      "/images/proyecto_ecommerce/ecommerce-contacto.jpeg",
+      "/images/proyecto_ecommerce/ecommerce-contacto-2.jpeg",
+      "/images/proyecto_ecommerce/ecommerce-mobile.jpeg",
+      "/images/proyecto_ecommerce/ecommerce-mobile-2.jpeg"
     ],
     demo: "https://camelmodashop.vercel.app/", 
     github: "https://github.com/Brian13b/Ecommerce_Camel_Shop_Backend"

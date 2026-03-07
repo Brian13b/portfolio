@@ -7,7 +7,7 @@ export const Hero = () => {
   };
 
   const downloadCV = () => {
-    window.open("cv/CV_Brian_Nicolas_Battauz.pdf", "_blank");
+    window.open("cv/CV_Brian_Nicolas_Battauz_2026.pdf", "_blank");
   };
 
   return (
