@@ -2,6 +2,7 @@ import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } f
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "./ui/carousel";
 import { Button } from "./ui/button";
 import { ExternalLink, Github, CheckCircle2 } from "lucide-react";
+import ReactMarkdown from 'react-markdown';
 import { Badge } from "./ui/badge";
 
 interface ProjectModalProps {
@@ -60,14 +61,10 @@ export const ProjectModal = ({ project, open, onOpenChange }: ProjectModalProps)
                             <h3 className="text-lg font-semibold mb-3 flex items-center gap-2">
                                 💡 Sobre el proyecto
                             </h3>
-                            <div className="text-muted-foreground leading-relaxed space-y-4 text-sm md:text-base">
-                                {project.longDesc.split('\n').map((paragraph, idx) => 
-                                    paragraph.trim() && (
-                                        <p key={idx} className="text-justify">
-                                            {paragraph}
-                                        </p>
-                                    )
-                                )}
+                            <div className="prose prose-invert max-w-none text-muted-foreground text-sm md:text-base">
+                                <ReactMarkdown>
+                                    {project.longDesc}
+                                </ReactMarkdown>
                             </div>
                         </div>
                     )}
@@ -87,7 +84,6 @@ export const ProjectModal = ({ project, open, onOpenChange }: ProjectModalProps)
                     )}
 
                     <div>
-                        <h3 className="text-lg font-semibold mb-3">Stack Tecnológico</h3>
                         <div className="flex flex-wrap gap-2">
                             {project.tags.map((tag) => (
                                 <Badge 

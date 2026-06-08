@@ -25,8 +25,8 @@ export const Hero = () => {
               </div>
               
               <p className="text-lg text-muted-foreground max-w-2xl">
-                Soy desarrollador freelance Full Stack Junior, apasionado developer con foco en Python, C#, Java y React. 
-                Me apasiona crear sitios web modernos y funcionales que ayuden a los usuarios y empresas a destacar.
+                Soy un Desarrollador Backend & Frontend especializado en diseñar arquitecturas robustas y construir soluciones de software completas. 
+                Desde la estructuración de microservicios hasta la experiencia de usuario final, transformo la lógica de negocio en plataformas escalables utilizando Python, C#, Java y React.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start items-center pt-4">

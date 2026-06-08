@@ -64,10 +64,10 @@ export const About = () => {
               ¡Hola! Soy <strong className="text-foreground">Brian Battauz</strong>, Técnico Universitario en Programación graduado en la UTN.
             </p>
             <p>
-              Me especializo como <strong className="text-foreground">Backend & Frontend Developer</strong>. No me encasillo solo en un rol, sino que disfruto tener la capacidad de construir soluciones tecnológicas completas y complejas, desde la base de datos hasta la interfaz de usuario.
+              Me especializo como <strong className="text-foreground">Backend & Frontend Developer</strong>. Más que encasillarme en un solo rol, me enfoco en tener la capacidad de diseñar y construir soluciones tecnológicas completas, desde la arquitectura de la base de datos hasta la interfaz final del usuario.
             </p>
             <p>
-              Apasionado por la arquitectura de software limpia y el aprendizaje continuo. Siempre busco optimizar cada línea de código para crear sistemas eficientes y escalables.
+              Soy un apasionado por la <strong className="text-foreground">Clean Architecture</strong> y el aprendizaje continuo. Mi objetivo diario no es solo escribir código, sino optimizar sistemas para que sean eficientes, escalables y aporten valor real al negocio.
             </p>
           </div>
         </div>
