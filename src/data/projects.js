@@ -165,13 +165,13 @@ Desarrollo integral de una plataforma E-commerce para una marca de indumentaria.
 Single Page Application (SPA) corporativa de alto rendimiento que sirve como carta de presentación oficial de la marca. El desarrollo fue concebido bajo una premisa clara: comunicar visual y técnicamente la capacidad de construir soluciones de software limpias que impulsan el crecimiento empresarial.
 
 ### 🚀 Características de Ingeniería
-• **Performance Extrema:** Optimizada meticulosamente utilizando Vite como entorno de desarrollo y empaquetado para lograr tiempos de carga inicial casi instantáneos.
-• **Diseño Tech Premium:** Interfaz de usuario totalmente responsiva (Mobile-First) que utiliza fuentes tipográficas como 'Inter' y 'Space Grotesk' para lograr una estética moderna, limpia y minimalista.
-• **Calidad de Código:** Estructuración modular y semántica de componentes de UI (Navbar, Hero, Services) junto con la configuración de ESLint para asegurar un código mantenible, escalable y libre de errores.
+  \n• **Performance Extrema:** Optimizada meticulosamente utilizando Vite como entorno de desarrollo y empaquetado para lograr tiempos de carga inicial casi instantáneos.
+  \n• **Diseño Tech Premium:** Interfaz de usuario totalmente responsiva (Mobile-First) que utiliza fuentes tipográficas como 'Inter' y 'Space Grotesk' para lograr una estética moderna, limpia y minimalista.
+  \n• **Calidad de Código:** Estructuración modular y semántica de componentes de UI (Navbar, Hero, Services) junto con la configuración de ESLint para asegurar un código mantenible, escalable y libre de errores.
 
 ### ⚙️ Detalles de Implementación
-• **Frontend:** React 19 (Biblioteca principal de UI) y Vite.
-• **Estilos & Iconos:** Tailwind CSS v4 (Framework de estilos utility-first) y Lucide React.
+  \n• **Frontend:** React 19 (Biblioteca principal de UI) y Vite.
+  \n• **Estilos & Iconos:** Tailwind CSS v4 (Framework de estilos utility-first) y Lucide React.
     `,
     images: [
       "/images/proyecto_gbsolucionesdigitales.png",

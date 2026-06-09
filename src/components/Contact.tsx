@@ -15,7 +15,7 @@ const socialLinks = [
 ];
 
 const EMAILJS_CONFIG = {
-  serviceId: "service_r36sczu",
+  serviceId: "service_mwzg6ls",
   templateId: "template_d3bvqvm",
   publicKey: "RAeyrWItVRfOglG7h",
 };
