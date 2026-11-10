@@ -154,6 +154,33 @@ export const About = () => {
               ))}
             </div>
           </div>
+
+          {/* Especialidades e Integraciones */}
+          <div className={`transition-all duration-700 delay-600 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
+            <h3 className="text-2xl font-semibold mt-12 mb-6 flex items-center gap-2">
+              <span className="text-primary">🔌</span> Especialidades e Integraciones
+            </h3>
+            <div className="flex flex-wrap gap-3">
+              {[
+                "Facturación Electrónica AFIP (SOAP/XML)", 
+                "Integración API WhatsApp", 
+                "Integración con IA", 
+                "Manejo de Estado (Zustand, Redux, Context)", 
+                "Data Fetching (React Query, Axios)",
+                "ORMs (Entity Framework, Dapper, Hibernate, SQLAlchemy)",
+                "Caché & Rendimiento (Redis)",
+                "Mailing (SendGrid, Resend)",
+                "Testing (PyTest, UnitTest)"
+              ].map((skill, index) => (
+                <span 
+                  key={index} 
+                  className="px-4 py-2 bg-primary/5 text-primary rounded-full text-sm font-medium border border-primary/20 hover:border-primary hover:bg-primary/10 transition-colors cursor-default"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>
