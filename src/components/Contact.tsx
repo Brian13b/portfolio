@@ -9,9 +9,9 @@ import emailjs from "@emailjs/browser";
 
 const socialLinks = [
   { icon: Github, href: "https://github.com/brian13b", label: "GitHub" },
-  { icon: Linkedin, href: "https://www.linkedin.com/in/brian-battauz-75691a217", label: "LinkedIn" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/brian-nicolas-battauz", label: "LinkedIn" },
   { icon: Mail, href: "mailto:brian.nbattauz@gmail.com", label: "Email" },
-  { icon: Phone, href: "https://wa.me/5491136323030", label: "WhatsApp" },
+  { icon: Phone, href: "https://wa.me/5493434676232", label: "WhatsApp" },
 ];
 
 const EMAILJS_CONFIG = {

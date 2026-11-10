@@ -25,8 +25,7 @@ export const Hero = () => {
               </div>
               
               <p className="text-lg text-muted-foreground max-w-2xl">
-                Soy un desarrollador Backend & Frontend especializado en diseñar arquitecturas robustas y construir soluciones de software completas. 
-                Desde la estructuración del proyecto hasta la experiencia de usuario final, transformo la lógica de negocio en plataformas escalables utilizando Python, C#, Java y React.
+                Especializado en diseñar arquitecturas robustas y construir soluciones de software de principio a fin. Desde la estructuración del proyecto hasta la experiencia de usuario, transformo la lógica de negocio en plataformas escalables y eficientes utilizando Python, C#, Java y React.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start items-center pt-4">
